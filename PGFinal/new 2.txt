@@ -1,0 +1,6 @@
+<?php
+$link = mysqli_connect("localhost","root","")or die("Unable to connect");
+$db   = mysqli_select_db($link,"pgproject");
+$query = "select * from test";
+mysqli_query($link,$query) or die("Query not executed");
+?>
